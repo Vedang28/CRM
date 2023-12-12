@@ -55,10 +55,10 @@ if __name__ == '__main__':
 bloom
 from pybloom_live import ScalableBloomFilter
 bloom_filter = ScalableBloomFilter()
-elements_to_add = ['bunty', 'prem', 'yash']
+elements_to_add = ['raj', 'jay', 'om']
 for element in elements_to_add:
     bloom_filter.add(element)
-elements_to_check = ['bunty', 'orange', 'apple']
+elements_to_check = ['raj', 'orange', 'apple']
 for element in elements_to_check:
     if element in bloom_filter:
         print(f"{element} is present")
